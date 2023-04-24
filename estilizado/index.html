@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/app.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="witdh=device-witdh, initial-scale 1">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Wiki</title>
+    </head>
+    <body>
+        <header> Portal de Transporte Marítimo!
+            <section>
+                <form id="formulario" novalidate>
+                    <ul>
+                        <li>
+                            <label>Correo electronico</label>
+                            <input type="email" id="email" required>
+                        </li>
+                        <li>
+                            <label>Rut</label>
+                            <input type="text" id="rut" required>
+                        </li>
+                        <li>
+                            <label>Contraseña</label>
+                            <input type="password" id="contrasenya" required>
+                        </li>
+                        <li>
+                            <label>Confirmacion contraseña</label>
+                            <input type="password" id="recontrasenya"required>
+                        </li>
+                        <li>
+                            <button type="submit">Registrarse</button>
+                        </li>
+                    </ul>
+                </form>
+            </section>
+            <script src="" async defer></script>
+        </header>
+        <button id="reloadBtn">Recargar</button>
+
+        <script>
+            // Obtener el botón de recarga por su ID
+            const reloadBtn = document.querySelector("#reloadBtn");
+          
+            // Agregar un controlador de eventos de clic al botón
+            reloadBtn.addEventListener("click", function () {
+              // Recargar la página y enviar al usuario al inicio
+              window.location.href = "index.html";
+            });
+        </script>
+
+        <h1 id = "tituloPrincipal">
+            Bievenido usuario!
+        </h1>
+        <nav class="menu">
+           <ul>
+            <li id="galeria2"> Consulta en los siguientes enlaces cualquier tema de tu interes </li>
+            <a href="interfaz1.html">Rutas Sostenibles</a>
+            <a href="interfaz2.html">Emisiones Carbono</a>
+            <a href="interfaz3.html">Estado Mar</a>
+            <a href="interfaz4.html">Proveedores</a>
+            <a href="interfaz5.html">Nosotros</a>
+            <a href="interfaz6.html">Más</a>
+           </ul> 
+        </nav>
+        <h2>
+            Estamos felices de que nos escojas
+        </h2>
+        <p>
+            Gracias por entrar a este portal, nuestro objetivo es informar acerca de rutas maritimas sustentables, reduciendo las emisiones de combustibles y porque pueden ser tambien alternativas mas economicas
+        </p>
+        <ul class="galeria">
+            <img id="1"src="images/ONU.jpg" alt="Imagen ONU">
+            <!--<img id="2"src="images/globo.png" alt="">
+            <img id="3"src="images/2.jpg" alt="">
+            <img id="4"src="images/mar.png" alt="">-->
+        </ul>
+    </body>
+</html>
